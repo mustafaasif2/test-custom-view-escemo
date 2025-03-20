@@ -2,15 +2,15 @@
  * @type {import('@commercetools-frontend/application-config').ConfigOptionsForCustomView}
  */
 const config = {
-  name: 'My New Custom View Project 2',
+  name: 'Mustafa Escemo Custom View',
   cloudIdentifier: 'gcp-eu',
   env: {
     development: {
       initialProjectKey: 'test-project-12121',
     },
     production: {
-      customViewId: 'TODO',
-      url: 'https://my-custom-view.com',
+      customViewId: 'cm8h8om3p0074010160abzm3p',
+      url: 'https://test-custom-view-escemo.netlify.app',
     },
   },
   oAuthScopes: {
@@ -19,7 +19,7 @@ const config = {
   },
   type: 'CustomPanel',
   typeSettings: {
-    size: 'LARGE',
+    size: 'SMALL',
   },
   locators: ['products.product_details.general'],
 };
