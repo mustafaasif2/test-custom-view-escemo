@@ -4,6 +4,7 @@
 const config = {
   name: 'Mustafa Escemo Custom View',
   cloudIdentifier: 'gcp-eu',
+  mcApiUrl: 'https://mc-api.europe-west1.gcp.escemo.com',
   env: {
     development: {
       initialProjectKey: 'test-project-12121',
