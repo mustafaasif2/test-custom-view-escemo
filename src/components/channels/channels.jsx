@@ -12,6 +12,12 @@ import { ContentNotification } from '@commercetools-uikit/notifications';
 import { Pagination } from '@commercetools-uikit/pagination';
 import Spacings from '@commercetools-uikit/spacings';
 import Text from '@commercetools-uikit/text';
+import { PrimaryButton, SecondaryButton } from '@commercetools-uikit/buttons';
+import { useShowNotification } from '@commercetools-frontend/actions-global';
+import {
+  DOMAINS,
+  NOTIFICATION_KINDS_SIDE,
+} from '@commercetools-frontend/constants';
 import {
   formatLocalizedString,
   transformLocalizedFieldToLocalizedString,
@@ -39,6 +45,23 @@ const Channels = () => {
     perPage,
     tableSorting,
   });
+  const showNotification = useShowNotification();
+
+  const handleSuccessNotification = () => {
+    showNotification({
+      kind: NOTIFICATION_KINDS_SIDE.success,
+      domain: DOMAINS.SIDE,
+      text: 'Operation completed successfully! 🎉',
+    });
+  };
+
+  const handleErrorNotification = () => {
+    showNotification({
+      kind: NOTIFICATION_KINDS_SIDE.error,
+      domain: DOMAINS.SIDE,
+      text: 'An error occurred! Please try again. ⚠️',
+    });
+  };
 
   if (error) {
     return (
@@ -68,11 +91,16 @@ const Channels = () => {
         </Text.Subheadline>
       </Spacings.Stack>
 
-      <Constraints.Horizontal max={13}>
-        <ContentNotification type="info">
-          <Text.Body intlMessage={messages.demoHint} />
-        </ContentNotification>
-      </Constraints.Horizontal>
+      <Spacings.Inline>
+        <PrimaryButton
+          label="Show Success Notification"
+          onClick={handleSuccessNotification}
+        />
+        <SecondaryButton
+          label="Show Error Notification"
+          onClick={handleErrorNotification}
+        />
+      </Spacings.Inline>
 
       {loading && <LoadingSpinner />}
 

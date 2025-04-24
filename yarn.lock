@@ -1749,6 +1749,22 @@
     lodash "4.17.21"
     prop-types "15.8.1"
 
+"@commercetools-uikit/buttons@^19.22.7":
+  version "19.22.7"
+  resolved "https://registry.yarnpkg.com/@commercetools-uikit/buttons/-/buttons-19.22.7.tgz#c45d747cbc1ffa2aee0a0dc9a011a7b95893076a"
+  integrity sha512-j6EGV6teno/Yc7pNmvkhLD0abs/mbLHGblwNSuoO3e3mQUkwzqoFZ/V4g7afPZv4Oqn4dW7iNtF3nIOMCK1Ncw==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@babel/runtime-corejs3" "^7.20.13"
+    "@commercetools-uikit/accessible-button" "19.22.7"
+    "@commercetools-uikit/design-system" "19.22.7"
+    "@commercetools-uikit/flat-button" "19.22.7"
+    "@commercetools-uikit/icon-button" "19.22.7"
+    "@commercetools-uikit/link-button" "19.22.7"
+    "@commercetools-uikit/primary-button" "19.22.7"
+    "@commercetools-uikit/secondary-button" "19.22.7"
+    "@commercetools-uikit/secondary-icon-button" "19.22.7"
+
 "@commercetools-uikit/card@19.22.7", "@commercetools-uikit/card@^19.22.3":
   version "19.22.7"
   resolved "https://registry.yarnpkg.com/@commercetools-uikit/card/-/card-19.22.7.tgz#1a0c9bea55845c5de70f29197d5bc326b61b33e2"
@@ -2055,6 +2071,23 @@
     "@commercetools-uikit/utils" "19.22.7"
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"
+    prop-types "15.8.1"
+
+"@commercetools-uikit/link-button@19.22.7":
+  version "19.22.7"
+  resolved "https://registry.yarnpkg.com/@commercetools-uikit/link-button/-/link-button-19.22.7.tgz#f5788fbc1336a5ce9132a988f6dc1f5d67aebc2c"
+  integrity sha512-7cPe62r9mJ6odfAjfZydWAqPb2PABoUk9L1iDD6bJqf3Wvysco7uXsWt1uy7KIxObOZ9bHRfowa3r5UZ027GPA==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@babel/runtime-corejs3" "^7.20.13"
+    "@commercetools-uikit/accessible-button" "19.22.7"
+    "@commercetools-uikit/design-system" "19.22.7"
+    "@commercetools-uikit/spacings-inline" "19.22.7"
+    "@commercetools-uikit/text" "19.22.7"
+    "@commercetools-uikit/utils" "19.22.7"
+    "@emotion/react" "^11.10.5"
+    "@emotion/styled" "^11.10.5"
+    lodash "4.17.21"
     prop-types "15.8.1"
 
 "@commercetools-uikit/link@^19.22.3":

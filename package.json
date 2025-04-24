@@ -1,5 +1,5 @@
 {
-  "name": "my-new-custom-view-project-2",
+  "name": "test-custom-view-escemo",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -38,6 +38,7 @@
     "@commercetools-test-data/channel": "8.5.0",
     "@commercetools-test-data/commons": "8.5.0",
     "@commercetools-test-data/core": "8.5.0",
+    "@commercetools-uikit/buttons": "^19.22.7",
     "@commercetools-uikit/constraints": "^19.22.3",
     "@commercetools-uikit/data-table": "^19.22.3",
     "@commercetools-uikit/flat-button": "^19.22.3",
